@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chicken Shop</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- AUTH -->
+<div class="auth-overlay" id="auth">
+<div class="auth-box">
+<h2 id="authTitle">Signup</h2>
+<input id="name" placeholder="Name">
+<input id="phone" placeholder="Phone">
+<input id="address" placeholder="Address">
+<input id="landmark" placeholder="Landmark">
+<button onclick="signup()">Signup</button>
+<p onclick="toggleAuth()" style="text-align:center;cursor:pointer">Already user? Sign in</p>
+</div>
+</div>
+<!-- SHOP -->
+<div class="shop" id="shop">
+<h1>🍗 Chicken Shop</h1>
+<button onclick="openCart()">🛒 Cart</button>
+
+
+<div class="grid">
+<div class="item" onclick="addToCart('Whole Chicken',260)">
+<img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791">
+<h3>Whole Chicken</h3>
+<p>₹260/kg</p>
+</div>
+<div class="item" onclick="addToCart('Boneless',420)">
+<img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9">
+<h3>Boneless</h3>
+<p>₹420/kg</p>
+</div>
+</div>
+</div>
+<!-- CART -->
+<div class="auth-overlay" id="cartBox" style="display:none">
+<div class="auth-box">
+<h2>🛒 Your Cart</h2>
+<div id="cartItems"></div>
+<h3 id="grandTotal"></h3>
+<button onclick="placeOrder()">Order on WhatsApp</button>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
