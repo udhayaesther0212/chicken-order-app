@@ -106,5 +106,5 @@ ITEMS:
 
   msg += `\nTOTAL ₹${total}`;
 
-  window.open(`https://wa.me/8754565826?text=${encodeURIComponent(msg)}`);
+  window.open(`https://wa.me/7806808216?text=${encodeURIComponent(msg)}`);
 }
